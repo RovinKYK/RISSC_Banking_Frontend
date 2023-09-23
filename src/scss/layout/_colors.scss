@@ -1,0 +1,33 @@
+// global colors
+$clr-main: #000000;
+$clr-main-light: #0177FB;
+$clr-main-high: #0660FE;
+$clr-sec: #ff9d22;
+$clr-sub: #18191d;
+$clr-high: #ff5c5c;
+$clr-light: #f5f5f5;
+$clr-dark: #121315;
+$clr-dark-sec: #191919;
+
+$grd-main: linear-gradient(0deg, #0660FE 0%, #0177FB 100%);
+$grd-sec: linear-gradient(0deg, #0660FE 0%, #0177FB 50%);
+
+$grd-high: linear-gradient(0deg, #701b1b 0%, #e42f2f 100%);
+$grd-high-sec: linear-gradient(0deg, #701b1b 0%, #e42f2f 50%);
+
+// Dark theme
+$clr-dk-main: #254138;
+$clr-dk-sec: #2e3a3d;
+$clr-dk-light: #354043;
+
+$grd-dk-main: linear-gradient(220deg, #121315 0%, #121315 100%);
+
+// horizontal gradient
+$grd-dk-hr: linear-gradient(90deg, #121315 0%, #121315 100%);
+
+// fonts
+$mf: "Poppins", sans-serif;
+$pf: "Josefin Sans", sans-serif;
+$sf: "Redressed", cursive;
+$rf: "Roboto", sans-serif;
+$df: "Mrs Saint Delafield", cursive;

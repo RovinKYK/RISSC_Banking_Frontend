@@ -1,0 +1,85 @@
+@import '../../scss/layout/colors';
+@import '../../scss/utilities/variables';
+
+.sidebar {
+  width: 215px;
+  flex: 1.1;
+  background: $grd-dk-main;
+  position: fixed;
+  height: 100vh;
+  transition: 0.7s ease;
+  z-index: 100;
+
+  .top {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    img {
+      width: 25px;
+    }
+
+    p {
+      white-space: nowrap;
+    }
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    height: calc(100% - 100px);
+    
+    ul {
+      height: 100%;
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 1em;
+      z-index: 10;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &:last-child {
+          margin-top: auto;
+        }
+
+        p {
+          font-style: 13px;
+          font-weight: 500;
+          margin-left: 10px;
+        }
+      }
+    }  
+  }
+
+}
+
+.sidebar.collapse {
+  width: 50px;
+  transition: 0.7s ease;
+}
+
+@media(max-width: 600px) {
+  .sidebar {
+    .center {
+      
+      ul {
+        height: 90%;
+      }
+    }
+  }
+}

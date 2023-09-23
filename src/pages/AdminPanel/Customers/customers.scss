@@ -1,0 +1,47 @@
+@import '../../../scss/layout/colors';
+@import '../../../scss/utilities/variables';
+
+.users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $clr-main;
+  
+  .title {
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+  }
+  p {
+    align-self: start;
+    margin-left: 5em;
+  }
+  .table-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .table {
+      padding: 1em;
+      background: $clr-light;
+      border-radius: 20px !important;
+      border: none !important;
+    }
+  }
+}
+
+.actions {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  button {
+    width: 130px;
+  }
+}
